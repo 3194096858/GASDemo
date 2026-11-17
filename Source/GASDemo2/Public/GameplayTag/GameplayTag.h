@@ -1,0 +1,92 @@
+﻿#pragma once
+#include "CoreMinimal.h"
+#include "NativeGameplayTags.h"
+
+namespace Tag
+{
+	namespace Ability
+	{
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(Dash);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(Combo);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(Jump);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(Movement);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(HitReaction);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(Projectile);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(Death);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shield);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(Passive);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(Cooldown);
+
+	}
+	namespace Effect
+	{
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(ComboDamage);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(ProjectileDamage);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(BurningDamage);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(AttributeInitialization);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(UpdateDefense);
+
+		namespace Cooldown
+		{
+			UE_DECLARE_GAMEPLAY_TAG_EXTERN(Dash);
+			UE_DECLARE_GAMEPLAY_TAG_EXTERN(Projectile);
+			UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shield);
+
+		}
+		namespace Data
+		{
+			UE_DECLARE_GAMEPLAY_TAG_EXTERN(ProjectileDamage);
+			UE_DECLARE_GAMEPLAY_TAG_EXTERN(BurningDamage);
+			UE_DECLARE_GAMEPLAY_TAG_EXTERN(ShieldDefense);
+
+		}
+	}
+	namespace Cue
+	{
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(Dash);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(Combo);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(Projectile);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shield);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(Burning);
+		namespace HitReaction
+		{
+			UE_DECLARE_GAMEPLAY_TAG_EXTERN(PlayerCharacter);
+			UE_DECLARE_GAMEPLAY_TAG_EXTERN(NPC);
+
+		}
+	}
+	
+	namespace Event
+	{
+		
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(OnExecuteCollisionDetection);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(OnProjectileLaunch);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(OnReceiveAttack);
+
+	}
+	namespace Character
+	{
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(Quinn);
+		//UE_DECLARE_GAMEPLAY_TAG_EXTERN(Boris);
+
+	}
+
+	namespace Input
+	{
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(Look);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(SeathingSword);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(WithdrawingSword);
+
+
+	}
+	namespace ReactionDirection
+	{
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(Front);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(Back);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(Left);
+		UE_DECLARE_GAMEPLAY_TAG_EXTERN(Right);
+
+
+	}
+
+};
